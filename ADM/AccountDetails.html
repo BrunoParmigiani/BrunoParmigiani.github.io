@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>ADM - Account Details</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a>Início</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Catalog.html">Catálogo</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Pedidos</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Carrinho</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Denúncias</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Favoritos</a>
+            </div>
+    
+            <div class="nav-profile">
+                <a href="AccountDetails.html">U</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <div class="content-wrap">
+            <!--Page content-->
+            <br>
+            <h2>Dados da Conta</h2>
+            <hr>
+        
+            <div class="form-group col-md-4">
+                <label for="name">Nome</label>
+                <input value="Administrador" type="text" class="form-control" id="name" readonly>
+                <br>
+        
+                <label for="email">E-mail</label>
+                <input value="administrador@empresa.com" type="text" class="form-control" id="email" readonly>
+                <br>
+        
+                <label for="cpf">CPF</label>
+                <input value="123.456.789-10" type="text" class="form-control" id="cpf" readonly>
+                <br>
+        
+                <label for="phonenumber">Telefone</label>
+                <input value="(DDD) 91234-5678" type="text" class="form-control" id="phonenumber" readonly>
+                <br>
+            </div>
+            <br>
+        
+            <div class="d-flex">
+                <a class="btn btn-primary">Voltar</a>
+                <a class="btn btn-success" style="margin-left: 15px;" href="EditAccountDetails.html">Editar</a>
+                <a class="btn btn-warning" style="margin-left: 15px;" href="PasswordConfirm.html">Trocar Senha</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li>Mock item 1</li>
+                <li>Mock item 2</li>
+                <li>Mock item 3</li>
+                <li>Mock item 4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
