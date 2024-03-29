@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>ADM - Orders</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a>Início</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Catalog.html">Catálogo</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Orders.html">Pedidos</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Carrinho</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Denúncias</a>
+            </div>
+    
+            <div class="nav-item">
+                <a>Favoritos</a>
+            </div>
+    
+            <div class="nav-profile">
+                <a href="AccountDetails.html">U</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <div class="content-wrap">
+            <!--Page content-->
+            <br>
+            <h2>Pedidos</h2>
+            <hr>
+
+            <div class="form-group">
+                <h4>Ordenação</h4>
+                <br>
+
+                <div class="d-flex">
+                    <div class="d-grid" style="width: 15%;">
+                        <h5>Alfabética</h5>
+                        <select class="form-control">
+                            <option>Não ordenar</option>
+                            <option>Crescente</option>
+                            <option>Decrescente</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                        <h5>Data</h5>
+                        <select class="form-control">
+                            <option>Não ordenar</option>
+                            <option>Crescente</option>
+                            <option>Decrescente</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                        <h5>Preço</h5>
+                        <select class="form-control">
+                            <option>Não ordenar</option>
+                            <option>Crescente</option>
+                            <option>Decrescente</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <h4>Filtragem</h4>
+                <br>
+
+                <div class="d-grid">
+                    <div class="d-flex">
+                        <div class="d-grid" style="width: 15%;">
+                            <h5>Nome do produto</h5>
+                            <select class="form-control">
+                                <option>Item 1</option>
+                                <option>Item 2</option>
+                                <option>Item 3</option>
+                            </select>
+                        </div>
+
+                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                            <h5>Data</h5>
+                            <input class="form-control" type="date">
+                        </div>
+
+                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                            <h5>Preço</h5>
+                            <input class="form-control" type="number">
+                        </div>
+                    </div>
+
+                    <div class="d-flex" style="margin-top: 25px;">
+                        <div class="d-grid" style="width: 15%;">
+                            <h5>Local</h5>
+                            <input class="form-control" type="text">
+                        </div>
+
+                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                            <h5>Cliente</h5>
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p class="btn btn-primary" style="width: 15%;">Filtrar</p>
+
+            <table class="table table-striped">
+                <thead>
+                    <th>N° Pedido</th>
+                    <th>Cliente</th>
+                    <th>Produtos</th>
+                    <th>Preço</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nome do cliente</td>
+                        <td>Produtos</td>
+                        <td>Total</td>
+                        <td>Local</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="d-flex" style="justify-content: center;">
+                <p id="decrement" class="btn bg-white">&#60</p>
+                <p id="page" class="form-control" style="width: 70px;">1</p>
+                <p id="increment" class="btn bg-white">&#62</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <ul>
+            <li>Mock item 1</li>
+            <li>Mock item 2</li>
+            <li>Mock item 3</li>
+            <li>Mock item 4</li>
+        </ul>
+    </div>
+    
+    <script>
+        const page = document.getElementById("page");
+        const decrement = document.getElementById("decrement");
+        const increment = document.getElementById("increment");
+        let i = 1;
+
+        decrement.addEventListener("click", () => {
+            if (i <= 1) {
+                return;
+            }
+
+            i--;
+
+            page.innerText = i;
+        });
+
+        increment.addEventListener("click", () => {
+            i++;
+
+            page.innerText = i;
+        });
+    </script>
+</body>
+
+</html>

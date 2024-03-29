@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
-    <title>ADM - Password Change</title>
+    <title>ADM - Delete Product</title>
 </head>
 
 <body>
@@ -45,17 +45,28 @@
         <div class="content-wrap">
             <!--Page content-->
             <br>
-            <h2>Trocar Senha</h2>
+            <h2>Deletar Produto</h2>
             <hr>
+            <h4>Tem certeza que deseja deletar este produto? Esta ação não pode ser desfeita</h4>
+            <br>
 
-            <div class="form-group col-md-4">
-                <label for="password">Nova Senha</label>
-                <input type="password" class="form-control" id="password" placeholder="Senha">
-
-                <div class="d-flex" style="margin-top: 15px;">
-                    <a class="btn btn-primary" href="AccountDetails.html">Cancelar</a>
-                    <a class="btn btn-success" style="margin-left: 15px;">Salvar</a>
+            <div class="d-flex bg-white" style="padding: 10px; margin-bottom: 50px; width: 50%;">
+                <div class="d-grid" style="width: 200px; place-items: center; align-content: center; border: 1px black solid;">
+                    Imagem
                 </div>
+
+                <div class="position-relative" style="margin-left: 20px; width: 92%;">
+                    <h4>Nome do Produto</h4>
+                    <p>Preço</p>
+                    <p>Avaliação</p>
+                    <p>Descrição</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="d-flex">
+                <a class="btn btn-primary" href="Catalog.html">Cancelar</a>
+                <a class="btn btn-danger" style="margin-left: 15px;" href="Catalog.html">Deletar</a>
             </div>
         </div>
 
