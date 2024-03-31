@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
-    <title>ADM - Create Product</title>
+    <title>ADM - Order Info</title>
 </head>
 
 <body>
@@ -22,11 +22,11 @@
             <div class="nav-item">
                 <a href="Orders.html">Pedidos</a>
             </div>
-            
+
             <div class="nav-item">
                 <a href="Reports.html">Denúncias</a>
             </div>
-
+    
             <div class="nav-profile">
                 <a href="AccountDetails.html">U</a>
             </div>
@@ -37,28 +37,36 @@
         <div class="content-wrap">
             <!--Page content-->
             <br>
-            <h2>Criar Produto</h2>
+            <h2>Dados do Pedido</h2>
             <hr>
 
             <div class="form-group col-md-4">
-                <label for="name">Nome</label>
-                <input type="text" class="form-control" id="name" placeholder="Nome">
+                <label for="customer">Cliente</label>
+                <input name="customer" class="form-control" type="text" value="Nome do cliente" readonly>
                 <br>
-        
-                <label for="price">Preço</label>
-                <input type="number" class="form-control" id="price" placeholder="0.00">
-                <br>
-        
-                <label for="description">Descrição</label>
-                <textarea type="textbox" class="form-control" id="description" rows="2"></textarea>
-                <br>
-            </div>
-            <br>
 
-            <div class="d-flex">
-                <a class="btn btn-primary" href="Catalog.html">Cancelar</a>
-                <a class="btn btn-success" style="margin-left: 15px;" href="Catalog.html">Salvar</a>
+                <label for="order">Valor do pedido</label>
+                <input name="order" class="form-control" type="text" value="R$0,00" readonly>
+                <br>
+
+                <label for="payment">Forma de pagamento</label>
+                <input name="payment" class="form-control" type="text" value="Ex.: Dinheiro" readonly>
+                <br>
+
+                <label for="estabilishment">Estabelecimento</label>
+                <input name="estabilishment" class="form-control" type="text" value="Estabelecimento" readonly>
+                <br>
+                
+                <label for="delivery">Previsão de entrega</label>
+                <input name="delivery" class="form-control" type="text" value="hh:mm" readonly>
+                <br>
+
+                <label for="order">Horário de entrega</label>
+                <input name="order" class="form-control" type="text" value="hh:mm" readonly>
+                <br>
             </div>
+
+            <a href="Orders.html" class="btn btn-primary">Voltar</a>
         </div>
 
     </div>

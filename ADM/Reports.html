@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
-    <title>ADM - Orders</title>
+    <title>ADM - Denouncements</title>
 </head>
 
 <body>
@@ -22,11 +22,11 @@
             <div class="nav-item">
                 <a href="Orders.html">Pedidos</a>
             </div>
-            
+    
             <div class="nav-item">
                 <a href="Reports.html">Denúncias</a>
             </div>
-
+    
             <div class="nav-profile">
                 <a href="AccountDetails.html">U</a>
             </div>
@@ -37,7 +37,7 @@
         <div class="content-wrap">
             <!--Page content-->
             <br>
-            <h2>Pedidos</h2>
+            <h2>Denúncias</h2>
             <hr>
 
             <div class="form-group">
@@ -62,15 +62,6 @@
                             <option>Decrescente</option>
                         </select>
                     </div>
-
-                    <div class="d-grid" style="width: 15%; margin-left: 50px;">
-                        <h5>Preço</h5>
-                        <select class="form-control">
-                            <option>Não ordenar</option>
-                            <option>Crescente</option>
-                            <option>Decrescente</option>
-                        </select>
-                    </div>
                 </div>
                 <br>
 
@@ -80,34 +71,28 @@
                 <div class="d-grid">
                     <div class="d-flex">
                         <div class="d-grid" style="width: 15%;">
-                            <h5>Nome do produto</h5>
-                            <select class="form-control">
-                                <option>Item 1</option>
-                                <option>Item 2</option>
-                                <option>Item 3</option>
-                            </select>
+                            <h5>Local</h5>
+                            <input class="form-control" type="text">
+                        </div>
+    
+                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                            <h5>Cliente</h5>
+                            <input class="form-control" type="text">
                         </div>
 
                         <div class="d-grid" style="width: 15%; margin-left: 50px;">
                             <h5>Data</h5>
                             <input class="form-control" type="date">
                         </div>
-
-                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
-                            <h5>Preço</h5>
-                            <input class="form-control" type="number">
-                        </div>
                     </div>
 
                     <div class="d-flex" style="margin-top: 25px;">
                         <div class="d-grid" style="width: 15%;">
-                            <h5>Local</h5>
-                            <input class="form-control" type="text">
-                        </div>
-
-                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
-                            <h5>Cliente</h5>
-                            <input class="form-control" type="text">
+                            <h5>Status</h5>
+                            <select class="form-control">
+                                <option>Pendente</option>
+                                <option>Resolvida</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -116,98 +101,84 @@
 
             <p class="btn btn-primary" style="width: 15%;">Filtrar</p>
 
-            <!--
-                1 - Re-do table to support links
-            -->
             <div name="table" style="margin-bottom: 20px;">
                 <div name="header" class="d-flex" style="justify-content: space-around; font-weight: bold; background-color: white;">
-                    <p>N° Pedido</p>
+                    <p>N° Denúncia</p>
                     <p>Cliente</p>
-                    <p>Produtos</p>
-                    <p>Preço</p>
-                    <p>Local</p>
+                    <p>Problema</p>
                     <p>Data</p>
+                    <p>Status</p>
                 </div>
                 <div name="body">
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
                         <p>10</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
                         <p>9</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
                         <p>8</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
                         <p>7</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
                         <p>6</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
                         <p>5</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
                         <p>4</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
                         <p>3</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
                         <p>2</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
-                    <a name="row" href="OrderInfo.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
                         <p>1</p>
                         <p>Nome do cliente</p>
-                        <p>Produtos</p>
-                        <p>Preço</p>
-                        <p>Local</p>
+                        <p>Problema</p>
                         <p>Data</p>
+                        <p>Status</p>
                     </a>
                     
                 </div>
@@ -230,7 +201,7 @@
             <li>Mock item 4</li>
         </ul>
     </div>
-    
+
     <script>
         const page = document.getElementById("page");
         const decrement = document.getElementById("decrement");
