@@ -22,6 +22,7 @@ body {
 
     .nav-bar {
         display: flex;
+        place-items: center;
         width: 100%;
         height: var(--nav-bar-height);
         margin: 0px;
@@ -43,7 +44,7 @@ body {
         text-align: center;
         align-items: center;
         height: var(--nav-bar-height);
-        margin-left: auto;
+        margin-left: 15px;
         margin-right: 50px;
     }
 
@@ -58,7 +59,11 @@ body {
 
     .nav-item > a, .nav-profile > a {
         color: inherit;
-        text-decoration: none;    
+        text-decoration: none;
+    }
+
+    .nav-logout {
+        margin-left: auto;
     }
 
     /* Transitions */

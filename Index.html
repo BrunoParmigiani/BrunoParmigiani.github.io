@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>Login</title>
 </head>
+
 <body>
-    <a href="ADM/AccountDetails.html">Não é um vírus com certeza</a>
+    <div class="page-container">
+        <div class="d-grid" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
+            <!--Page content-->
+            <div class="d-flex" style="flex-direction: column; align-items: center;">
+                <h3>Bem-vindo a nossa cafeteria gourmet!</h3>
+                <p>Faça o login para acessar o site</p>
+
+                <div class="d-flex" style="margin-bottom: 100px; margin-top: 50px; width: 75%; flex-direction: column; align-items: center;">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="text" class="form-control" style="text-align: center; margin-bottom: 25px;">
+
+                    <label for="password">Senha</label>
+                    <input id="password" name="password" type="password" class="form-control" style="text-align: center; margin-bottom: 25px;">
+                
+                    <a href="" id="login" class="btn btn-success" style="width: 50%;">Entrar</a>
+                    
+                    <div class="d-flex" style="margin-top: 20px;">
+                        <p id="mockadm" class="btn btn-primary">Administrador</p>
+                        <p id="mockest" class="btn btn-primary" style="margin-left: 15px;">Estabelecimento</p>
+                        <p id="mockusr" class="btn btn-primary" style="margin-left: 15px;">Usuário</p>
+                    </div>
+                    <h5>Mocks</h5>
+                </div>
+
+                <div class="d-flex" style="flex-direction: column; align-items: center;">
+                    <p>Não possui uma conta? Crie uma agora mesmo</p>
+                    <a class="btn btn-primary" style="width: 50%;">Criar uma conta</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Fields
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+
+        // Mocks
+        const mockadm = document.getElementById("mockadm");
+        const mockest = document.getElementById("mockest");
+        const mockusr = document.getElementById("mockusr");
+
+        // Submit
+        const login = document.getElementById("login");
+
+        mockadm.addEventListener("click", () => {
+            mockadm.style.backgroundColor = "black";
+            mockadm.style.borderColor = "black";
+
+            email.value = "administrador@empresa.com";
+            password.value = "mockpassword";
+            
+            login.href = "ADM/Home.html";
+        });
+    </script>
 </body>
+
 </html>
