@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>Email</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="d-grid" style="height: 100vh; width: 100%; justify-content: center; align-items: center;">
+            <!--Page content-->
+            <div class="d-flex" style="flex-direction: column; align-items: center;">
+                <h3>Criar conta</h3>
+
+                <div class="d-flex" style="margin-bottom: 100px; margin-top: 50px; width: 100%; flex-direction: column; align-items: center;">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="text" class="form-control" style="text-align: center; margin-bottom: 25px;">
+
+                    <div class="d-flex">
+                        <a href="Index.html" class="btn btn-primary" style="width: 50%;">Cancelar</a>
+                        <a href="" id="send" class="btn btn-success" style="width: 50%; margin-left: 15px;">Avançar</a>
+                    </div>
+                    
+                    <div class="d-flex" style="margin-top: 20px;">
+                        <p id="mockest" class="btn btn-primary">Estabelecimento</p>
+                        <p id="mockusr" class="btn btn-primary" style="margin-left: 15px;">Usuário</p>
+                    </div>
+                    <h5>Mocks</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const email = document.getElementById("email");
+        const send = document.getElementById("send");
+        const mockest = document.getElementById("mockest");
+        const mockusr = document.getElementById("mockusr");
+
+        mockest.addEventListener("click", () => {
+            mockusr.style.backgroundColor = "";
+            mockusr.style.borderColor = "";
+
+            mockest.style.backgroundColor = "black";
+            mockest.style.borderColor = "black";
+
+            email.value = "estabelecimento@empresa.com";
+            send.href = "EST/CreateAccount.html";
+        });
+
+        mockusr.addEventListener("click", () => {
+            mockest.style.backgroundColor = "";
+            mockest.style.borderColor = "";
+
+            mockusr.style.backgroundColor = "black";
+            mockusr.style.borderColor = "black";
+
+            email.value = "usuario@mailboxprovider.com";
+            send.href = "USR/CreateAccount.html";
+        });
+    </script>
+</body>
+
+</html>
