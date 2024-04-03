@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>USR - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a href="Home.html">Início</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Catalog.html">Catálogo</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Orders.html">Pedidos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Cart.html">Carrinho</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Reports.html">Denúncias</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Favorites.html">Favoritos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Announcement.html">Anúncios</a>
+            </div>
+
+            <div class="nav-logout">
+                <a href="../Index.html" class="btn btn-outline-primary">Logout</a>
+            </div>
+
+            <div class="nav-profile">
+                <a href="AccountDetails.html">U</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <div style="padding-left: 5%; padding-right: 5%; background-color: #967259; color: white;">
+            <a href="Announcement.html" style="text-decoration: underline; color: inherit;">Anúncios serão exibidos aqui. Você pode visualiza-los</a>
+        </div>
+        <div class="content-wrap">
+            <!--Page content-->
+            <br>
+            <h2>Denúncias</h2>
+            <hr>
+
+            <div class="form-group">
+                <h4>Ordenação</h4>
+                <br>
+
+                <div class="d-flex">
+                    <div class="d-grid" style="width: 15%;">
+                        <h5>Alfabética</h5>
+                        <select class="form-control">
+                            <option>Não ordenar</option>
+                            <option>Crescente</option>
+                            <option>Decrescente</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                        <h5>Data</h5>
+                        <select class="form-control">
+                            <option>Não ordenar</option>
+                            <option>Crescente</option>
+                            <option>Decrescente</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <h4>Filtragem</h4>
+                <br>
+
+                <div class="d-grid">
+                    <div class="d-flex">
+                        <div class="d-grid" style="width: 15%">
+                            <h5>Data</h5>
+                            <input class="form-control" type="date">
+                        </div>
+
+                        <div class="d-grid" style="width: 15%; margin-left: 50px;">
+                            <h5>Status</h5>
+                            <select class="form-control">
+                                <option>Pendente</option>
+                                <option>Resolvida</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p class="btn btn-primary" style="width: 15%;">Filtrar</p>
+
+            <div name="table" style="margin-bottom: 20px;">
+                <div name="header" class="d-flex" style="justify-content: space-around; font-weight: bold; background-color: white;">
+                    <p>N° Denúncia</p>
+                    <p>Problema</p>
+                    <p>Data</p>
+                    <p>Status</p>
+                </div>
+                <div name="body">
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                        <p>10</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                        <p>9</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                        <p>8</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                        <p>7</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                        <p>6</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                        <p>5</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                        <p>4</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                        <p>3</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: #f2f2f2;">
+                        <p>2</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    <a name="row" href="Report.html" class="d-flex" style="justify-content: space-around; text-decoration: none; color: inherit; background-color: white;">
+                        <p>1</p>
+                        <p>Problema</p>
+                        <p>Data</p>
+                        <p>Status</p>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="d-flex" style="justify-content: center;">
+                <p id="decrement" class="btn bg-white">&#60</p>
+                <p id="page" class="form-control" style="width: 70px;">1</p>
+                <p id="increment" class="btn bg-white">&#62</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <div class="d-flex footer">
+        <ul id="ulist">
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li><a href="Resume.html">Trabalhe conosco</a></li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 2</li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 3</li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 4</li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        const page = document.getElementById("page");
+        const decrement = document.getElementById("decrement");
+        const increment = document.getElementById("increment");
+        const tbody = document.getElementById("redirect");
+        let i = 1;
+
+        decrement.addEventListener("click", () => {
+            if (i <= 1) {
+                return;
+            }
+
+            i--;
+
+            page.innerText = i;
+        });
+
+        increment.addEventListener("click", () => {
+            i++;
+
+            page.innerText = i;
+        });
+    </script>
+</body>
+
+</html>

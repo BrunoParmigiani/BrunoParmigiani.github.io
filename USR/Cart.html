@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>USR - Cart</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a href="Home.html">Início</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Catalog.html">Catálogo</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Orders.html">Pedidos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Cart.html">Carrinho</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Reports.html">Denúncias</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Favorites.html">Favoritos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Announcement.html">Anúncios</a>
+            </div>
+
+            <div class="nav-logout">
+                <a href="../Index.html" class="btn btn-outline-primary">Logout</a>
+            </div>
+
+            <div class="nav-profile">
+                <a href="AccountDetails.html">U</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <div style="padding-left: 5%; padding-right: 5%; background-color: #967259; color: white;">
+            <a href="Announcement.html" style="text-decoration: underline; color: inherit;">Anúncios serão exibidos aqui. Você pode visualiza-los</a>
+        </div>
+        <div class="content-wrap">
+            <!--Page content-->
+            <br>
+            <h2>Carrinho</h2>
+            <hr>
+            <div>
+                <div class="d-flex bg-white" style="width: 50%; height: 200px; padding: 10px;">
+                    <div class="d-grid" style="justify-content: center; align-items: center; width: 200px; border: 1px black solid">
+                        Imagem
+                    </div>
+
+                    <div style="margin-left: 5%;">
+                        <h5>Nome do produto</h5>
+                        <p>Descrição</p>
+                        <p>Preço</p>
+                        <p>Avaliação</p>
+                    </div>
+
+                    <div class="d-flex" style="margin-left: auto; flex-direction: column; align-items: end;">
+                        <div>
+                            <p class="btn btn-danger" style="margin-left: auto;">X</p>
+                        </div>
+                        
+                        <div class="d-flex" style="margin-top: 15px;">
+                            <p class="btn bg-secondary text-white">-</p>
+                            <p class="form-control" style="width: 50px;">1</p>
+                            <p class="btn bg-secondary text-white">+</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="d-flex bg-white" style="width: 50%; height: 200px; padding: 10px;">
+                    <div class="d-grid" style="justify-content: center; align-items: center; width: 200px; border: 1px black solid">
+                        Imagem
+                    </div>
+
+                    <div style="margin-left: 5%;">
+                        <h5>Nome do produto</h5>
+                        <p>Descrição</p>
+                        <p>Preço</p>
+                        <p>Avaliação</p>
+                    </div>
+
+                    <div class="d-flex" style="margin-left: auto; flex-direction: column; align-items: end;">
+                        <div>
+                            <p class="btn btn-danger" style="margin-left: auto;">X</p>
+                        </div>
+                        
+                        <div class="d-flex" style="margin-top: 15px;">
+                            <p class="btn bg-secondary text-white">-</p>
+                            <p class="form-control" style="width: 50px;">1</p>
+                            <p class="btn bg-secondary text-white">+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div id="payform" class="form-group">
+                <div>
+                    <input id="cash" type="radio" name="pay">
+                    <label for="cash">Dinheiro</label>
+                </div>
+
+                <div>
+                    <input id="card" type="radio" name="pay">
+                    <label for="card">Cartão</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="d-flex">
+                <a class="btn btn-success" href="ComChannel.html">Finalizar Pedido</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <ul>
+            <li><a href="Resume.html">Trabalhe conosco</a></li>
+            <li>Mock item 2</li>
+            <li>Mock item 3</li>
+            <li>Mock item 4</li>
+        </ul>
+    </div>
+
+    <script>
+        const payform = document.getElementById("payform");
+        const cash = document.getElementById("cash");
+        const card = document.getElementById("card");
+
+        cash.addEventListener("click", () => {
+            if (payform.lastChild.id == "info") {
+                payform.removeChild(payform.lastChild);
+            }
+
+            let div = document.createElement("div");
+            div.id = "info"
+
+            const change = new InputForm("Troco", "change", "number", "form-control");
+            let changeElement = change.form();
+
+            div.appendChild(changeElement.Label);
+            div.appendChild(changeElement.Input);
+    
+            payform.appendChild(div);
+        });
+
+        card.addEventListener("click", () => {
+            if (payform.lastChild.id == "info") {
+                payform.removeChild(payform.lastChild);
+            }
+
+            let div = document.createElement("div");
+            div.id = "info"
+            
+            const cardNumber = new InputForm("Número do cartão", "cardnumber", "text", "form-control");
+            let cardNumberElement = cardNumber.form();
+
+            const cardName = new InputForm("Nome impresso no cartão", "cardname", "text", "form-control");
+            let cardNameElement = cardName.form();
+
+            const cardExpiration = new InputForm("Data de validade do cartão", "cardexpire", "text", "form-control")
+            let cardExpirationElement = cardExpiration.form();
+
+            const cardCode = new InputForm("Código de verificação", "cardcode", "text", "form-control");
+            let cardCodeElement = cardCode.form();
+
+            div.appendChild(cardNumberElement.Label);
+            div.appendChild(cardNumberElement.Input);
+
+            div.appendChild(cardNameElement.Label);
+            div.appendChild(cardNameElement.Input);
+
+            div.appendChild(cardExpirationElement.Label);
+            div.appendChild(cardExpirationElement.Input);
+
+            div.appendChild(cardCodeElement.Label);
+            div.appendChild(cardCodeElement.Input);
+
+            payform.appendChild(div);
+        });
+
+        class InputForm {
+            constructor(labelText, labelFor, inputType, inputClass) {
+                this.labelText = labelText
+                this.labelFor = labelFor,
+                this.inputType = inputType,
+                this.inputClass = inputClass,
+                this.inputName = labelFor
+            }
+
+            form() {
+                let label = document.createElement("label");
+                label.innerText = this.labelText;
+                label.for = this.labelFor;
+
+                let input = document.createElement("input");
+                input.type = this.inputType;
+                input.className = this.inputClass;
+                input.inputName = this.inputName;
+                input.style.width = "15%";
+
+                return {Label : label, Input : input};
+            }
+        }
+    </script>
+</body>
+
+</html>

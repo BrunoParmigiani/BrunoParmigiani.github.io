@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
+    <title>USR - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a href="Home.html">Início</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Catalog.html">Catálogo</a>
+            </div>
+    
+            <div class="nav-item">
+                <a href="Orders.html">Pedidos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Cart.html">Carrinho</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Reports.html">Denúncias</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Favorites.html">Favoritos</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="Announcement.html">Anúncios</a>
+            </div>
+
+            <div class="nav-logout">
+                <a href="../Index.html" class="btn btn-outline-primary">Logout</a>
+            </div>
+
+            <div class="nav-profile">
+                <a href="AccountDetails.html">U</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-container">
+        <div style="padding-left: 5%; padding-right: 5%; background-color: #967259; color: white;">
+            <a href="Announcement.html" style="text-decoration: underline; color: inherit;">Anúncios serão exibidos aqui. Você pode visualiza-los</a>
+        </div>
+        <div class="content-wrap">
+            <!--Page content-->
+            <br>
+            <h2>Avaliação</h2>
+            <hr>
+
+            <div class="col-md-4">
+                <div>
+                    <h5>Tempo de entrega</h5>
+                    <div>
+                        <input id="d1" name="delivery" type="radio">
+                        <label for="d1">1</label>
+                        <input id="d2" name="delivery" style="margin-left: 15px;" type="radio">
+                        <label for="d2">2</label>
+                        <input id="d3" name="delivery" style="margin-left: 15px;" type="radio">
+                        <label for="d3">3</label>
+                        <input id="d4" name="delivery" style="margin-left: 15px;" type="radio">
+                        <label for="d4">4</label>
+                        <input id="d5" name="delivery" style="margin-left: 15px;" type="radio">
+                        <label for="d5">5</label>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <h5>Qualidade do pedido</h5>
+                    <div>
+                        <input id="q1" name="quality" type="radio">
+                        <label for="q1">1</label>
+                        <input id="q2" name="quality" style="margin-left: 15px;" type="radio">
+                        <label for="q2">2</label>
+                        <input id="q3" name="quality" style="margin-left: 15px;" type="radio">
+                        <label for="q3">3</label>
+                        <input id="q4" name="quality" style="margin-left: 15px;" type="radio">
+                        <label for="q4">4</label>
+                        <input id="q5" name="quality" style="margin-left: 15px;" type="radio">
+                        <label for="q5">5</label>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <h5>Qualidade de entrega</h5>
+                    <div>
+                        <input id="dq1" name="dquality" type="radio">
+                        <label for="dq1">1</label>
+                        <input id="dq2" name="dquality" style="margin-left: 15px;" type="radio">
+                        <label for="dq2">2</label>
+                        <input id="dq3" name="dquality" style="margin-left: 15px;" type="radio">
+                        <label for="dq3">3</label>
+                        <input id="dq4" name="dquality" style="margin-left: 15px;" type="radio">
+                        <label for="dq4">4</label>
+                        <input id="dq5" name="dquality" style="margin-left: 15px;" type="radio">
+                        <label for="dq5">5</label>
+                    </div>
+                </div>
+                <br>
+
+                <label for="desc">Comentários</label>
+                <textarea id="desc" class="form-control" rows="5"></textarea>
+                <br>
+
+                <div class="d-flex">
+                    <a href="Orders.html" class="btn btn-primary">Cancelar</a>
+                    <a href="Orders.html" class="btn btn-success" style="margin-left: 15px;">Enviar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="d-flex footer">
+        <ul id="ulist">
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li><a href="Resume.html">Trabalhe conosco</a></li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 2</li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 3</li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 4</li>
+            </div>
+        </ul>
+    </div>
+</body>
+
+</html>
