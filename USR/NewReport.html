@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
-    <title>USR - ComChannel</title>
+    <title>USR - New Report</title>
 </head>
 
 <body>
@@ -56,39 +56,29 @@
         <div class="content-wrap">
             <!--Page content-->
             <br>
-            <h2>Comunicação</h2>
+            <h2>Fazer Denúncia</h2>
             <hr>
+        
+            <div class="col-md-4">
+                <label>Problema</label>
+                <select class="form-control">
+                    <option>Problema 1</option>
+                    <option>Problema 2</option>
+                    <option>Problema 3</option>
+                    <option>Problema 4</option>
+                    <option>Problema 5</option>
+                </select>
+                <br>
 
-            <div class="d-flex" style="height: 50vh;">
-                <div class="form-group col-md-4">
-                    <label for="payment">Previsão de entrega</label>
-                    <input name="payment" type="text" class="form-control" readonly>
-                    <br>
-
-                    <label for="total">Total</label>
-                    <input name="total" type="text" class="form-control" value="R$ 0.00" readonly>
-                    <br>
-
-                    <label for="payment">Forma de pagamento</label>
-                    <input name="payment" type="text" class="form-control" value="" readonly>
-                    <br>
-
-                    <label for="payment">Status</label>
-                    <input name="payment" type="text" class="form-control" value="" readonly>
-                    <br>
-                </div>
-
-                <div class="d-flex form-control" style="flex-direction: column; margin-left: 30px;">
-                    <p class="form-control" style="width: 40%; background-color: lightblue;">Mensagem do estabelecimento</p>
-                    <p class="form-control" style="width: 40%; margin-left: auto; background-color: lightblue;">Mensagem do cliente</p>
-                    
-                    <div class="d-flex" style="margin-top: auto;">
-                        <p class="form-control" style="margin-right: 15px;">Mensagem</p>
-                        <p class="btn btn-primary">Enviar</p>
-                    </div>
-                </div>
+                <label>Descreva o problema em detalhes</label>
+                <textarea rows="10" class="form-control"></textarea>
             </div>
             <br>
+        
+            <div class="d-flex">
+                <a href="Reports.html" class="btn btn-primary">Cancelar</a>
+                <a href="Home.html" class="btn btn-success" style="margin-left: 15px;">Enviar</a>
+            </div>
         </div>
 
     </div>

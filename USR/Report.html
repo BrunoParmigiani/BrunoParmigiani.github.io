@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Shared/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Shared/Styles/PageModel.css" rel="stylesheet">
-    <title>USR - ComChannel</title>
+    <title>USR - Report</title>
 </head>
 
 <body>
@@ -56,25 +56,25 @@
         <div class="content-wrap">
             <!--Page content-->
             <br>
-            <h2>Comunicação</h2>
+            <h2>Denúncia</h2>
             <hr>
 
             <div class="d-flex" style="height: 50vh;">
                 <div class="form-group col-md-4">
-                    <label for="payment">Previsão de entrega</label>
+                    <label for="payment">Problema</label>
                     <input name="payment" type="text" class="form-control" readonly>
                     <br>
 
-                    <label for="total">Total</label>
-                    <input name="total" type="text" class="form-control" value="R$ 0.00" readonly>
-                    <br>
-
-                    <label for="payment">Forma de pagamento</label>
-                    <input name="payment" type="text" class="form-control" value="" readonly>
+                    <label for="total">Data</label>
+                    <input name="total" type="text" class="form-control" readonly>
                     <br>
 
                     <label for="payment">Status</label>
                     <input name="payment" type="text" class="form-control" value="" readonly>
+                    <br>
+
+                    <label for="payment">Descrição</label>
+                    <textarea class="form-control" readonly></textarea>
                     <br>
                 </div>
 
@@ -88,17 +88,27 @@
                     </div>
                 </div>
             </div>
-            <br>
         </div>
 
     </div>
     
-    <div class="footer">
-        <ul>
-            <li><a href="Resume.html">Trabalhe conosco</a></li>
-            <li>Mock item 2</li>
-            <li>Mock item 3</li>
-            <li>Mock item 4</li>
+    <div class="d-flex footer">
+        <ul id="ulist">
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li><a href="Resume.html">Trabalhe conosco</a></li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 2</li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 3</li>
+            </div>
+
+            <div name="footerItemContainer" class="d-flex" style="flex-direction: column;">
+                <li>Mock item 4</li>
+            </div>
         </ul>
     </div>
 </body>
